@@ -43,59 +43,10 @@ void bfs(int sx, int sy)
     }
 }
 
-
-//int visited[5][5];
-//int dx[]= {-1, 1, 0, 0, -1,-1, 1, 1};
-//int dy[]= { 0, 0,-1, 1, -1, 1,-1, 1};
-//
-//struct node
-//{
-//    int x;
-//    int y;
-//};
-//bool valid(int x, int y)
-//{
-//    return (x>=0 && x<5 && y>=0 && y<5 && !visited[x][y]);
-//}
-//void bfs(int sx, int sy)
-//{
-//
-//    queue<node>q;
-//    q.push({sx,sy});
-//    visited[sx][sy]=1;
-//
-//    while(!q.empty())
-//    {
-//        int X=q.front().x;
-//        int Y=q.front().y;
-//
-//        q.pop();
-//
-//        for(int i=0; i<8; i++)
-//        {
-//            int nextx=X+dx[i];
-//            int nexty=Y+dy[i];
-//
-//            if(valid(nextx,nexty))
-//            {
-//                q.push({nextx,nexty});
-//                visited[nextx][nexty]=1;
-//
-//            }
-//
-//        }
-//    }
-//
-//}
-
-
-
 int main()
 {
     int sx,sy;
     cin>>sx>>sy;
-
-
     bfs(sx,sy);
 
     for(int i=0; i<8; i++)
